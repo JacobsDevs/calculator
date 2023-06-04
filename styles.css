@@ -1,0 +1,54 @@
+.calculatorBody {
+    background-color: aqua;
+    width: 400px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen {
+    flex: 1;
+    display: flex;
+    background-color: blueviolet;
+    margin: 5px 5px 2px;
+    min-width: 350px;
+    caret-color: transparent;
+    
+}
+
+.screen input {
+    flex: 1;
+    background-color: white;
+    text-align: end;
+    font-size: 42px;
+    width: 100%;
+    
+}
+
+.buttons {
+    flex: 4;
+    display: flex;
+    background-color: grey;
+    min-width: 350px;
+    margin: 5px 5px 20px;
+}
+
+.buttoncol {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.buttoncol div {
+    display: flex;
+    border: solid black 1px;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    /* padding-top: 50%;
+    padding-bottom: 50%; */
+    justify-content: center;
+    align-items: center;
+}
