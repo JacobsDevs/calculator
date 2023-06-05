@@ -16,7 +16,6 @@ const numbers = document.querySelectorAll(".number");
 //for each of the number buttons set up the buttonPressed function.
 for (number of numbers) {
     number.addEventListener("click", buttonPressed);
-    number.addEventListener("touchstart", buttonPressed);
 };
 
 //Get all the operator buttons
@@ -24,25 +23,21 @@ const operators = document.querySelectorAll(".operator")
 //Add the operator function to distinguish which button was pressed, save the current inputNum and reset the decimals and inputNum.value to 0
 for (operator of operators) {
     operator.addEventListener("click", operatorPressed);
-    operator.addEventListener("touchstart", operatorPressed);
 };
 
 //Get all memory buttons
 const memoryButtons = document.querySelectorAll(".memory")
 for (memButton of memoryButtons) {
     memButton.addEventListener("click", memoryPressed);
-    memButton.addEventListener("touchstart", memoryPressed);
 };
 
 //Get Clear button
 const clearButton = document.querySelector(".clear");
 clearButton.addEventListener("click", clearPressed);
-clearButton.addEventListener("touchstart", clearPressed);
 
 //Get Backspace button
 const backspaceButton = document.querySelector(".backspace");
 backspaceButton.addEventListener("click", backspacePressed);
-backspaceButton.addEventListener("touchstart", backspacePressed);
 
 //buttonPressed() will add the button pressed to the inputNum.value.  It will also check for multiple decimal points and will not allow a 2nd . to be added to the number
 function buttonPressed() {
