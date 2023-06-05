@@ -108,6 +108,7 @@ function memoryPressed() {
 
 function clearPressed() {
     num1 = inputNum.value = num2 = 0;
+    operator = oldOperator = null
     operatorJustPressed = true;
 };
 
