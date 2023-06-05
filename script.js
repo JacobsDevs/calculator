@@ -65,6 +65,7 @@ function buttonPressed() {
 function operatorPressed() {
     let oldOperator = operator;
     operator = this.innerText;
+    decimals = 0;
     if (num1 == 0) {
         num1 = inputNum.value;
         inputNum.value = "";
